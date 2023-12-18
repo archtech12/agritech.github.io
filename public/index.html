@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="Watari-irrigation-dam" href="favicon.ico" sizes="16x16">
+
+    <title>Agri Tech Solution</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <img src="/public/farmer-image.jpg" alt="Farmer Image" class="farmer-image">
+            <h1>Welcome to Agri Tech Solution</h1>
+            <p>Transforming Agriculture with Technology</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Agri Tech</a>
+            <div class="nav-links">
+                <a href="#about">About Us</a>
+                <a href="#features">Features</a>
+                <a href="#contact">Contact Us</a>
+                <a href="dashboard.html" onclick="navigateToDashboard()">Dashboard</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                Agri Tech Solution is dedicated to revolutionizing agriculture. Our mission is to empower farmers with data-driven
+                solutions.
+            </p>
+        </div>
+    </section>
+
+    <section id="features" class="section">
+        <div class="container">
+            <h2>Features</h2>
+            <ul>
+                <li>Real-time Weather Updates</li>
+                <li>Market Price Information</li>
+                <li>Crop Management Recommendations</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have a question or suggestion? Reach out to us!</p>
+            <!-- Add your address, phone number, and email here -->
+        <p>Visit us at: No12 Adamu mekila Road Gaya LGA, Kano State</p>
+        <p>Phone: +234 (706) 392-5919</p>
+        <p>Email: nazifiibrahimgaya@gmail..com</p>
+            <form action="" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="weather" class="section">
+        <div class="container">
+            <h2>Real-time Weather Updates</h2>
+            <div id="weather-content">
+                <p id="weather-info">Fetching weather data...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="crop-yields" class="section">
+        <div class="container">
+            <h2>Crop Yields</h2>
+            <ul id="crop-list">
+            <!-- Add list items for crop yields dynamically -->
+            <li>Crop A: 1000 kg</li>
+            <li>Crop B: 800 kg</li>
+            <!-- Add more items as needed -->    
+            </ul>
+        </div>
+    </section>
+
+    <section id="market-prices" class="section">
+        <div class="container">
+            <h2>Market Prices</h2>
+            <ul id="crop-prices-list">
+                <li>Crop A: $1.50/kg</li>
+                <li>Crop B: $2.00/kg</li>    
+            </ul>
+        </div>
+    </section>
+
+    <section id="crop-management" class="section">
+        <div class="container">
+            <h2>Crop Management</h2>
+            <ul id="crop-management-tips">
+                <li>Tip 1: Use organic fertilizers for better yield</li>
+                <li>Tip 2: Rotate crops to improve soil health</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="user-preferences" class="section">
+        <div class="container">
+            <h2>User Preferences</h2>
+            <form onsubmit="saveUserPreferences(); return false;" class="preferences-form">
+                <label for="preferred-crops">Preferred Crops:</label>
+                <input type="text" id="preferred-crops" name="preferred-crops" />
+
+                <label for="preferred-region">Preferred Region:</label>
+                <input type="text" id="preferred-region" name="preferred-region" />
+
+                <button type="submit">Save Preferences</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Agri Tech Solution. All rights reserved</p>
+            <p>Visit us at: Gaya L.G.A, Kano State,Nigeria | Phone: +234 (706) 925-5919 | Email: nazifiibrahimgaya@gmail.com</p>
+        </div>
+    </footer>
+
+    <button id="toggleNavButton" onclick="toggleSideNav()">Toggle Navigation</button>
+    <!-- Back to Top Button -->
+    <button id="backToTopButton" onclick="scrollToTop()">Back to Top</button>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+/* Your CSS styles go here */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.navbar a.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    float: right;
+}
+
+.section {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.contact-form label,
+.preferences-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.preferences-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.preferences-form button,
+.contact-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.preferences-form button:hover,
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+/* style.css */
+
+.farmer-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Add border-radius for a rounded appearance */
+    margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+/* style.css */
+
+#backToTopButton {
+    display: none; /* Initially hide the button */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backToTopButton:hover {
+    background-color: #45a049;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+#toggleNavButton {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
